@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgb(244, 245, 247);
+}
+aside{
+    float: left;
+    clear: both;
+    /* display: absolute; */
+    position: fixed;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(214,216,217);;
+    
+
+}
+.students, .lessonPlan, .settings,.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: rgb(118, 145, 171);
+    font-size: 12px;
+    font-weight: 900;
+    width: 100%;
+    border-left: 4px solid white;
+    
+
+}
+.students:active, .lessonPlan:active, .settings:active{
+    background-color: rgb(205, 224, 239);
+    border-left: 4px solid rgb(29, 91, 183);
+}
+.logo{
+    height: 15vh;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 4px solid rgb(245, 245, 245);
+    color: black;
+    
+    
+}
+.logo > i{
+    font-size: 50px;
+}
+/* a:active{
+    background-color: royalblue;
+    color: black;
+    /* border-left: 4px solid blue; */
+/* } */
+
+
+
+
+header{
+    /* display: relative; */
+    height: 15vh;
+    /* clear: both; */
+    /* z-index: -10; */
+    background-color: white;
+    /* width: 100%; */
+}
+.contents{
+    margin-left: 106px;
+    /* padding-left: 20px; */
+}
+
+.videos{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 20px;
+    color: rgb(118, 145, 171);
+    font-weight: 700;
+    
+}
+.input{    
+    /* width: 0vw;  */
+    padding: 20px;
+    display: grid;
+    place-items: center;
+}
+input.url{
+    width: 70vw;
+    
+    border: none;
+    height: 40px;
+    border-radius: 8px;
+}
+.input > p{
+    padding-top: 30px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+input[type="file"] {
+    display: none;
+}
+.label{
+    padding-top: 50px;
+    width: 70vw;
+}
+label{
+    background-color: white;
+    border: 1px solid white;
+    padding: 70px;
+    font-weight: 700;
+    
+}
+
+::placeholder{
+    color: rgba(55, 55, 55, 0.836);
+    font-weight: 700;
+    padding-left: 15px;
+    font-size: 13px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.currentPage{
+    background-color: rgb(205, 224, 239);
+    border-left: 4px solid rgb(29, 91, 183);
+}
+#icon_video{
+    font-size: 28px;
+}
